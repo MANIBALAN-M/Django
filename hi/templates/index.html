@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+    {% block content %}
+
+        <H1>{{ hi_title | default:"data" }}</H1>
+        <p>Samsung Electronics is a South Korean multinational electronics company headquartered in Suwon, South Korea. It is one of the largest and most influential technology companies in the world, playing a major role in the global electronics industry. Here are some key points about Samsung Electronics:
+            {% for post in posts %}
+            <div class ="p1">
+            <H1> History</H1>
+            <h2>Founded:</h2> Samsung Electronics was founded in 1969 as a division of the Samsung Group, a conglomerate established in 1938 by Lee Byung-chul.
+            <h2>Early Products:</h2>> The company initially produced black-and-white televisions, quickly expanding into other electronics such as refrigerators, air conditioners, and washing machines.
+            </div>
+            {% endfor %}
+            <div class ="p2">
+            <H1> Business Segments</H1>
+            <H2>Samsung Electronics operates through several key segments:</h2>
+            </div>
+            <div class ="p3"><H2>1. Consumer Electronics (CE):</h2> Includes products like televisions, monitors, air conditioners, and home appliances.
+            <H2>2. IT & Mobile Communications (IM):</h2> Encompasses mobile phones, tablets, computers, and network systems. Samsung's Galaxy line of smartphones is particularly notable.
+            <H2>3. Device Solutions (DS):</h2> Comprises semiconductor products such as memory chips, system LSI (Large Scale Integration), and LED solutions.
+            <H2>4. Harman:</h2> Focuses on automotive electronics and audio systems, following Samsung's acquisition of Harman International Industries in 2017.
+            </div>
+            <div class ="p4">
+            <H1>Market Position</H1>
+        </h2>Smartphones:</h2> Samsung is one of the world's leading smartphone manufacturers, often competing closely with Apple for the top spot.
+        </h2>Semiconductors:</h2> Samsung is a global leader in semiconductor production, particularly in memory chips (DRAM and NAND flash).
+        </h2>Display Technology:</h2> Samsung is a major supplier of OLED and LCD panels, used in a wide range of devices from smartphones to televisions.
+    </div>
+            <div class ="">
+        <H1>Innovations and Products</H1>
+        </h2>Smartphones:</h2> Known for the Galaxy series, including flagship models like the Galaxy S and Galaxy Note lines.
+        </h2>Televisions:</h2> Pioneered technologies such as QLED and 8K resolution.
+        </h2>Home Appliances:</h2> Innovative products in the smart home sector, including smart refrigerators, washing machines, and air conditioners.
+            <h2>Semiconductors:</h2> Advances in DRAM, NAND flash memory, and development of new technologies like 3D NAND and EUV (extreme ultraviolet) lithography.
+    </div>
+            
+   {% endblock %}

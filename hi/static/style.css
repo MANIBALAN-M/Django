@@ -1,0 +1,17 @@
+/* Custom styles for header and footer */
+.header {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff;           /* White text */
+    padding: 1rem;            /* Padding for spacing */
+    text-align: center;       /* Centered text */
+}
+
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff;           /* White text */
+    padding: 1rem;            /* Padding for spacing */
+    text-align: center;       /* Centered text */
+    position: fixed;          /* Fix to bottom */
+    width: 100%;              /* Full width */
+    bottom: 0;                /* Align to bottom */
+}

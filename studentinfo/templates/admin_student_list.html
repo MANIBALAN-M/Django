@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Student List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'studentinfo/styles.css' %}">
+</head>
+<body>
+    <h1>Admin - Student List</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - Age: {{ student.age }}, Grade: {{ student.grade }}, Address: {{ student.address }}, Phone: {{ student.phone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
