@@ -5,18 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Student List</title>
-    <link rel="stylesheet" href="{% static 'studentinfo/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
 </head>
 <body>
     <h2>Student List</h2>
-    <ul>
-        {% for student in students %}
-        <li>
-            Name: {{ student.name }}<br>
-            Age: {{ student.age }}<br>
-            Grade: {{ student.grade }}<br>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.age }}</td>
+                    <td>{{ student.grade }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
